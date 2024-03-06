@@ -1,0 +1,13 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Configuración local
+.env
+
+# Archivos generados por tu IDE/editor
+.vscode/
+.idea/
+
+# Dependiendo de tu entorno y configuración, puedes necesitar agregar más líneas.

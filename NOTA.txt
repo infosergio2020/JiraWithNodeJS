@@ -1,0 +1,33 @@
+npm run start
+
+tareas asignadas al usuario:
+http://localhost:3000/api/jira-tasks/626fefdcb27b16006fb8635f
+
+tareas por projecto
+http://localhost:3000/api/jira-tasks-by-project/ADOG
+
+tareas de un determinado projecto y usuario
+http://localhost:3000/api/jira-tasks-by-project-and-assignee/ADOG/626fefdcb27b16006fb8635f
+
+
+registro de trabajo de una tarea
+http://localhost:3000/api/worklog/:issueKey
+
+
+tareas de un determinado projecto y usuario en determinado fecha de inicio y fin
+http://localhost:3000/api/jira-tasks-by-project-and-assignee-and-date/:projectKey/:assignee/:startDate/:endDate
+
+/jira-tasks-by-project-and-assignee-and-date/:projectKey/:assignee/:startDate/:endDate
+
+ejemplo:
+http://localhost:3000/api/jira-tasks-by-project-and-assignee-and-date/ADOG/626fefdcb27b16006fb8635f/2024-01-01/2024-12-31
+
+
+
+
+propiedades a revisar
+
+key -->    clave de identificacion de tarea (ADOG-xxxx)
+timeSpent --> tiempo trabajado en segundos (conversion: seg/3600 = horas)
+summary --> titulo del jira
+assignee / name --> nombre del resposable asignado
